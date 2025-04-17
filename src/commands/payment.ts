@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import { CallbackQueryContext, InlineKeyboard } from 'grammy';
-import { MyContext } from '../types';
-import { products } from '../consts/products';
-import { Order } from '../models/Order';
-import { User } from '../models/User';
+import { MyContext } from '../types.js';
+import { products } from '../consts/products.js';
+import { Order } from '../models/Order.js';
+import { User } from '../models/User.js';
 
 export const payment = async (ctx: CallbackQueryContext<MyContext>) => {
   ctx.answerCallbackQuery();

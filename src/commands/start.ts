@@ -1,6 +1,6 @@
 import { InlineKeyboard } from 'grammy';
-import { User } from '../models/User';
-import { MyContext } from '../types';
+import { User } from '../models/User.js';
+import { MyContext } from '../types.js';
 
 export const start = async (ctx: MyContext) => {
   if (!ctx.from) {

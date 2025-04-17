@@ -1,5 +1,4 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { IUser } from './User';
 
 export interface IOrder extends Document {
   userId: Types.ObjectId;

@@ -1,2 +1,2 @@
-export { start } from './start';
-export { payment, telegramSuccessfulPaymentHandler } from './payment';
+export * from './start.js';
+export * from './payment.js'; 

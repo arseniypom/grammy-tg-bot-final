@@ -2,10 +2,10 @@ import 'dotenv/config';
 import { Bot, GrammyError, HttpError, Context, InlineKeyboard } from 'grammy';
 import { hydrate } from '@grammyjs/hydrate';
 import mongoose from 'mongoose';
-import { MyContext } from './types';
-import { start, payment, telegramSuccessfulPaymentHandler } from './commands';
-import { User } from './models/User';
-import { products } from './consts/products';
+import { MyContext } from './types.js';
+import { start, payment, telegramSuccessfulPaymentHandler } from './commands/index.js';
+import { User } from './models/User.js';
+import { products } from './consts/products.js';
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 if (!BOT_TOKEN) {
